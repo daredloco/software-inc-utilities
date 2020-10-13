@@ -53,17 +53,15 @@ namespace SincUtilities
             }
             catch (SerializationException ex)
             {
-                //Debug.Warn("[Helpers] SerializationException thrown while deserializing, probably harmless... => " + ex.Message);
+                //uncomment if using Debug.cs
+                //Debug.Exception(ex);
                 return null;
             }
             catch (Exception ex)
             {
-                //if (ex.HResult != -2147467262)
-                //{
-                //    //Debug.Warn("[Helpers] Unknown exception while deserializing the array! => " + ex.Message);
-                //    return null;
-                //}
-                throw ex;
+                //uncomment if using Debug.exe
+                //Debug.Exception(ex);
+                return null;
             }
 
         }
@@ -100,7 +98,8 @@ namespace SincUtilities
                 SendableDictionaryPair p = Pairs.Find(x => x.Key == key);
                 if (p == null)
                 {
-                    //Debug.Warn($"[XML] Couldn't find object with key {key} inside Pairs! <= Can be ignored if mod doesn't crash afterwards");
+                    //Uncomment if using Debug.cs
+                    //Debug.Warn($"[Serializer.SendableDictionary.GetValue] Couldn't find object with key {key} inside Pairs! <= Can be ignored if mod doesn't crash afterwards");
                     return null;
                 }
                 object value = p.Value;
@@ -112,7 +111,8 @@ namespace SincUtilities
                 SendableDictionaryPair p = Pairs.Find(x => (string)x.Key == key);
                 if (p == null)
                 {
-                    //Debug.Warn($"[XML] Couldn't find object with key {key} inside Pairs!");
+                    //Uncomment if using Debug.cs
+                    //Debug.Warn($"[Serializer.SendableDictionary.GetValue] Couldn't find object with key {key} inside Pairs!");
                     return null;
                 }
                 return p.Value;
