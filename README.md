@@ -35,3 +35,29 @@ UITextbox(Rect pos, GUIWindow parent, string placeholder = "", string name = "",
 ```cs
 UITooltip(string title, string description, GameObject go);
 ```
+
+### Utils
+The SincUtilities.Utils class contains a variety of functions that won't fit in any other class.
+
+- RemoveDateTime: Removes x months from a SDateTime
+```cs
+RemoveDateTime(SDateTime old, int months);
+```
+- ShuffleList: Shuffles content from a list of objects
+```cs
+ShuffleList<T>(this IList<T> list);
+```
+- UpperFirstLetters: Sets every first letter of every word to uppercase
+```cs
+UpperFirstLetters(string str);
+```
+- GetPercentage: Adds/Subtracts a percentage from a value
+```cs
+GetPercentage(float value, float percentage, bool subtract = true);
+```
+- ReplaceValues: Replaces values from a string
+```cs
+ReplaceValues(string str, string[] values, string[] replacements);
+ReplaceValues(string str, string values, string replacements);
+ReplaceValues(string str, params KeyValuePair<string,string>[] pairs);
+```
