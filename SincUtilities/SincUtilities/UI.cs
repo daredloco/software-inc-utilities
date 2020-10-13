@@ -146,6 +146,7 @@ namespace SincUtilities
 					if (!string.IsNullOrEmpty(tooltiptitle) && !string.IsNullOrEmpty(tooltipdesc))
 						new UITooltip(tooltiptitle, tooltipdesc, t.gameObject);
 					Place(t.gameObject);
+					obj = t;
 				}
 			}
 
@@ -727,6 +728,7 @@ namespace SincUtilities
 					if (!string.IsNullOrEmpty(tooltiptitle) && !string.IsNullOrEmpty(tooltipdesc))
 						new UITooltip(tooltiptitle, tooltipdesc, t.gameObject);
 					Place(t.gameObject);
+					obj = t;
 				}
 			}
 
