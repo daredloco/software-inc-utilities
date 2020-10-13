@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SincUtilities
 {
@@ -10,7 +9,7 @@ namespace SincUtilities
 		/// <summary>
 		/// Random number generator
 		/// </summary>
-		private static System.Random rng = new System.Random();
+		private static Random rng = new Random();
 
 		/// <summary>
 		/// Removes 'months' months from the SDateTime 'old'
