@@ -220,7 +220,9 @@ namespace SincUtilities
 
 		namespace Element
 		{
-
+			/// <summary>
+			/// A label for the element
+			/// </summary>
 			public class UILabel : UIControl
 			{
 				public Text obj;
@@ -251,6 +253,9 @@ namespace SincUtilities
 				}
 			}
 
+			/// <summary>
+			/// A button for the element
+			/// </summary>
 			public class UIButton : UIControl
 			{
 				Button obj;
@@ -280,6 +285,9 @@ namespace SincUtilities
 				}
 			}
 
+			/// <summary>
+			/// A slider for the element
+			/// </summary>
 			public class UISlider : UIControl
 			{
 				Slider obj;
@@ -307,6 +315,9 @@ namespace SincUtilities
 				}
 			}
 
+			/// <summary>
+			/// A combobox for the element
+			/// </summary>
 			public class UICombobox : UIControl
 			{
 				GUICombobox obj;
@@ -697,6 +708,9 @@ namespace SincUtilities
 #endif
 			}
 
+			/// <summary>
+			/// A checkbox for the element
+			/// </summary>
 			public class UICheckbox : UIControl
 			{
 				Toggle obj;
@@ -716,6 +730,9 @@ namespace SincUtilities
 				}
 			}
 
+			/// <summary>
+			/// A textbox for the element
+			/// </summary>
 			public class UITextbox : UIControl
 			{
 				public InputField obj;
@@ -742,6 +759,9 @@ namespace SincUtilities
 				}
 			}
 
+			/// <summary>
+			/// A control for the element. Do not use this!
+			/// </summary>
 			public class UIControl
 			{
 				GameObject Parent;
@@ -758,6 +778,9 @@ namespace SincUtilities
 				}
 			}
 
+			/// <summary>
+			/// A tooltip for a gameobject
+			/// </summary>
 			public class UITooltip
 			{
 				GUIToolTipper obj;
