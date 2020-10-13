@@ -4,6 +4,10 @@
 To use the utilities, simply load the C# classes inside your project.
 
 ## Content
+* [SincUtilities.UI](#ui)
+* [SincUtilities.Utils](#utils)
+* [SincUtilities.Serializer](#serializer)
+
 ### UI
 The SincUtilities.UI class has a Window and Element namespace in it. The Window controls can be used with Windows and the Element controls can be used with Elements.
 
@@ -35,3 +39,48 @@ UITextbox(Rect pos, GUIWindow parent, string placeholder = "", string name = "",
 ```cs
 UITooltip(string title, string description, GameObject go);
 ```
+
+### Utils
+The SincUtilities.Utils class contains a variety of functions that won't fit in any other class.
+
+- RemoveDateTime: Removes x months from a SDateTime
+```cs
+RemoveDateTime(SDateTime old, int months);
+```
+- ShuffleList: Shuffles content from a list of objects
+```cs
+ShuffleList<T>(this IList<T> list);
+```
+- UpperFirstLetters: Sets every first letter of every word to uppercase
+```cs
+UpperFirstLetters(string str);
+```
+- GetPercentage: Adds/Subtracts a percentage from a value
+```cs
+GetPercentage(float value, float percentage, bool subtract = true);
+```
+- ReplaceValues: Replaces values from a string
+```cs
+ReplaceValues(string str, string[] values, string[] replacements);
+ReplaceValues(string str, string values, string replacements);
+ReplaceValues(string str, params KeyValuePair<string,string>[] pairs);
+```
+
+### Serializer
+The SincUtilities.Serializer class contains a Serialize() and Deserialize<T>() function to handle serialization.
+ 
+ - Serialize: Serializes classes/objects that are marked as [Serializable]
+ ```cs
+ [Serializable]
+ public class SClass
+ {
+   public int Id;
+   public string Name;
+ }
+ 
+ byte[] serialized = Serialize(new SClass(){Id = 1, Name = "Test"});
+ ```
+ - Deserialize: Deserializes a bytearray to a class/object marked as [Serializable]
+ ```cs
+ SClass deserialized = Deserialize<SClass>(serialized);
+ ```
