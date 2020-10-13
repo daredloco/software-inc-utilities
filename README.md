@@ -1,5 +1,6 @@
 # Software Inc Utilities
- 
+Those Utilities are a collection of scripts you can use to create Code Mods for [Software Inc](https://store.steampowered.com/app/362620/Software_Inc/) faster.
+
 ## Usage
 To use the utilities, simply load the C# classes inside your project.
 
