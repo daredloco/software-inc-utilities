@@ -4,6 +4,9 @@
 To use the utilities, simply load the C# classes inside your project.
 
 ## Content
+* [SincUtilities.UI](#ui)
+* [SincUtilities.Utils](#utils)
+
 ### UI
 The SincUtilities.UI class has a Window and Element namespace in it. The Window controls can be used with Windows and the Element controls can be used with Elements.
 
