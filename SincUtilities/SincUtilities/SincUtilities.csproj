@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debug.cs" />
     <Compile Include="Events.cs" />
     <Compile Include="Serializer.cs" />
     <Compile Include="UI.cs" />
