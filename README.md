@@ -6,6 +6,7 @@ To use the utilities, simply load the C# classes inside your project.
 ## Content
 * [SincUtilities.UI](#ui)
 * [SincUtilities.Utils](#utils)
+* [SincUtilities.Serializer](#serializer)
 
 ### UI
 The SincUtilities.UI class has a Window and Element namespace in it. The Window controls can be used with Windows and the Element controls can be used with Elements.
@@ -64,3 +65,22 @@ ReplaceValues(string str, string[] values, string[] replacements);
 ReplaceValues(string str, string values, string replacements);
 ReplaceValues(string str, params KeyValuePair<string,string>[] pairs);
 ```
+
+### Serializer
+The SincUtilities.Serializer class contains a Serialize() and Deserialize<T>() function to handle serialization.
+ 
+ - Serialize: Serializes classes/objects that are marked as [Serializable]
+ ```cs
+ [Serializable]
+ public class SClass
+ {
+   public int Id;
+   public string Name;
+ }
+ 
+ byte[] serialized = Serialize(new SClass(){Id = 1, Name = "Test"});
+ ```
+ - Deserialize: Deserializes a bytearray to a class/object marked as [Serializable]
+ ```cs
+ SClass deserialized = Deserialize<SClass>(serialized);
+ ```
