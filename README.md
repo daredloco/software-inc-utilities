@@ -7,6 +7,7 @@ To use the utilities, simply load the C# classes inside your project.
 * [SincUtilities.UI](#ui)
 * [SincUtilities.Utils](#utils)
 * [SincUtilities.Serializer](#serializer)
+* [SincUtilities.Debug](#debug)
 
 ### UI
 The SincUtilities.UI class has a Window and Element namespace in it. The Window controls can be used with Windows and the Element controls can be used with Elements.
@@ -84,3 +85,12 @@ The SincUtilities.Serializer class contains a Serialize() and Deserialize<T>() f
  ```cs
  SClass deserialized = Deserialize<SClass>(serialized);
  ```
+
+### Debug
+The SincUtilities.Debug class contains debugging/logging functions to easily log anything inside your mod
+
+- ModName: Change the modname to save it inside the software inc datafolder
+- Info: Logs a informational message
+- Warn: Logs a warning
+- Error: Logs an error
+- Exception: Logs an exception
