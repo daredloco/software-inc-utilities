@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Debug.cs" />
     <Compile Include="Events.cs" />
+    <Compile Include="Gameplay.cs" />
     <Compile Include="Serializer.cs" />
     <Compile Include="UI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
