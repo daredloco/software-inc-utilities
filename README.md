@@ -9,6 +9,7 @@ To use the utilities, simply load the C# classes inside your project.
 * [SincUtilities.Utils](#utils)
 * [SincUtilities.Serializer](#serializer)
 * [SincUtilities.Debug](#debug)
+* [SincUtilities.Gameplay](#gameplay)
 
 ### UI
 The SincUtilities.UI class has a Window and Element namespace in it. The Window controls can be used with Windows and the Element controls can be used with Elements.
@@ -95,3 +96,25 @@ The SincUtilities.Debug class contains debugging/logging functions to easily log
 - Warn: Logs a warning
 - Error: Logs an error
 - Exception: Logs an exception
+
+### Gameplay
+The SincUtilities.Gameplay class contains functions to easily handle gameplay elements
+
+- Money.* : Adds/Removes money to the category (Money.Bills would add/remove money from the Bills category)
+- Sales.Offline: Adds/Removes offline sales from a SoftwareProduct
+- Sales.Online: Adds/Remmoves online sales from a SoftwareProduct
+- Sales.Refunds: Adds/Removes refunds from a SoftwareProduct
+- Fans.Product: Adds/Removes fans from the category of a SoftwareProduct
+- Fans.Category: Adds/Removes fans from a SoftwareCategory
+- Fans.* : Adds/Removes fans from the category (Fans.ComputerOS would add/remove fans from the Computer OS category)
+- Popularity.Product: Adds/Removes popularity to the category of a SoftwareProduct
+- Popularity.Category: Adds/Removes popularity to a SoftwareCategory
+- Popularity.* : Adds/Removes popularity from the category (Popularity.ComputerOS would add/remove popularity form the Computer OS category)
+- Experience.* : Adds/Removes experience in a category to an actor/employee (Experience.Leadership would add/remove leadership experience to an actor/employee)
+- BusinessRep.Change: Adds/Removes Business Reputation to the players company
+- StockMarkets.Change: Changes all Stocks inside the StockMarket
+- StockMarkets.SingleChange: Changes a single Stock
+- EmployeeDetails.Stress: Changes the stress of an actor/employee
+- EmployeeDetails.Satisfaction: Changes the satisfaction of an actor/employee
+- EmployeeDetails.SendHome: Sends an actor/employee home
+- SoftwareDetails.Bugs: Adds/Removes bugs from a SoftwareProduct
