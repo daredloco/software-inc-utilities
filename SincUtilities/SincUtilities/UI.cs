@@ -26,7 +26,7 @@ namespace SincUtilities
 					if (fontsize > 0)
 						label.fontSize = (int)fontsize;
 
-					if (string.IsNullOrEmpty(name))
+					if (!string.IsNullOrEmpty(name))
 						label.name = name;
 
 					Place(label.gameObject);
@@ -35,7 +35,7 @@ namespace SincUtilities
 
 				public void ChangeText(string text)
 				{
-					if (string.IsNullOrEmpty(text))
+					if (!string.IsNullOrEmpty(text))
 						obj.text = text;
 				}
 			}
@@ -51,7 +51,7 @@ namespace SincUtilities
 					Button button = WindowManager.SpawnButton();
 					button.GetComponentInChildren<Text>().text = text;
 					button.onClick.AddListener(action);
-					if (string.IsNullOrEmpty(name))
+					if (!string.IsNullOrEmpty(name))
 						button.name = name;
 					if (!string.IsNullOrEmpty(tooltiptitle) && !string.IsNullOrEmpty(tooltipdesc))
 						new UITooltip(tooltiptitle, tooltipdesc, button.gameObject);
@@ -62,7 +62,7 @@ namespace SincUtilities
 
 				public void ChangeBehaviour(string text, UnityAction action = null)
 				{
-					if (string.IsNullOrEmpty(text))
+					if (!string.IsNullOrEmpty(text))
 						obj.GetComponentInChildren<Text>().text = text;
 					if (action != null)
 					{
@@ -249,7 +249,7 @@ namespace SincUtilities
 
 				public void ChangeText(string text)
 				{
-					if (string.IsNullOrEmpty(text))
+					if (!string.IsNullOrEmpty(text))
 						obj.text = text;
 				}
 			}
